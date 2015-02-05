@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="simplePagination.css" />
+</head>
+<body>
+	<div id="pagination"></div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.simplePagination.js"></script>
+	<script>
+		 $("#pagination").pagination({
+	        items: 100,
+	        itemsOnPage: 8,
+	        cssStyle: 'light-theme',
+	        onPageClick : function(pageNumber, event) {
+	        	console.log(pageNumber);
+	        }
+    	});
+	</script>
+</body>
+</html>
